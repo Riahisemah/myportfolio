@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semah Riahi — Développeur Full Stack & DevOps</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/polish.css">
+</head>
+
+<body>
+
+  <div class="ambient" aria-hidden="true">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="grid-fx"></span>
+  </div>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Semah Riahi" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Semah Riahi">Semah Riahi</h1>
+
+          <p class="title">Full Stack & DevOps</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Voir les contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:riahisamh817@gmail.com" class="contact-link">riahisamh817@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Téléphone</p>
+
+              <a href="tel:+21626653690" class="contact-link">+216 26 653 690</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="globe-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Site web</p>
+
+              <a href="https://semahriahi.netlify.app" class="contact-link" target="_blank" rel="noopener">semahriahi.netlify.app</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Localisation</p>
+
+              <address>Béja, Tunisie</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/Riahisemah" class="social-link" target="_blank" rel="noopener" title="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://semahriahi.netlify.app" class="social-link" target="_blank" rel="noopener" title="Portfolio">
+              <ion-icon name="globe-outline"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="mailto:riahisamh817@gmail.com" class="social-link" title="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">À propos</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Développeur Full Stack & DevOps basé à Béja (Tunisie).
+            Expérience en React, Laravel, Node.js et déploiement cloud (AWS, Docker, Kubernetes).
+          </p>
+
+          <p>
+            Habitué aux méthodologies agiles, aux revues de code et à la documentation technique.
+            Je conçois des applications web de bout en bout et des architectures cloud scalables,
+            avec une approche concrète et orientée production.
+          </p>
+
+          <ul class="tech-stack" aria-label="Stack technique">
+            <li>React</li>
+            <li>Laravel</li>
+            <li>Node.js</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Terraform</li>
+            <li>PostgreSQL</li>
+            <li>Python</li>
+            <li>CI/CD</li>
+          </ul>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Ce que je fais</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Développement Full Stack</h4>
+
+                <p class="service-item-text">
+                  Applications web avec React, Angular, Laravel, Node.js / Express et bases de données SQL & NoSQL.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="cloud-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud & DevOps</h4>
+
+                <p class="service-item-text">
+                  Architectures AWS, Docker, Kubernetes (EKS), Terraform, pipelines CI/CD et automatisation des déploiements.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">APIs & Backend</h4>
+
+                <p class="service-item-text">
+                  Conception d’APIs et services avec Node.js, Express, Laravel, Spring Boot, PHP et Python.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <ion-icon name="git-branch-outline"></ion-icon>
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Automatisation & Data</h4>
+
+                <p class="service-item-text">
+                  Scraping, pipelines de données, intégration MySQL/MongoDB et automatisation métier (n8n, scripts Python).
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - certifications highlight
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Certifications</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box cert-icon-box" data-cert-icon="logo-amazon">
+                  <ion-icon name="logo-amazon"></ion-icon>
+                  <img src="./assets/images/icon-dev.svg" alt="AWS Educate" width="60" data-testimonials-avatar hidden>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>AWS Educate</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Getting Started with Compute / Storage et Introduction to Cloud 101 — Amazon Web Services, 2026.
+                    Bases du cloud AWS : calcul, stockage et concepts fondamentaux.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box cert-icon-box" data-cert-icon="logo-python">
+                  <ion-icon name="logo-python"></ion-icon>
+                  <img src="./assets/images/icon-app.svg" alt="Python Essentials 1" width="60" data-testimonials-avatar hidden>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Python Essentials 1</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Certification Cisco (2026) — fondamentaux du langage Python, structures de contrôle,
+                    fonctions et bonnes pratiques pour l’automatisation et le développement.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box cert-icon-box">
+                <ion-icon name="ribbon-outline" data-modal-cert-icon></ion-icon>
+                <img src="./assets/images/icon-dev.svg" alt="Certification" width="80" data-modal-img hidden>
+              </figure>
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>AWS Educate</h4>
+
+              <time datetime="2026-01-01">2026</time>
+
+              <div data-modal-text>
+                <p>
+                  Getting Started with Compute / Storage et Introduction to Cloud 101 — Amazon Web Services, 2026.
+                  Bases du cloud AWS : calcul, stockage et concepts fondamentaux.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">CV</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Formation</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Diplôme d’Ingénieur en Génie Informatique</h4>
+
+              <span>ITeam University, Tunis — 2025 – Actuel</span>
+
+              <p class="timeline-text">
+                Formation d’ingénieur en informatique (en cours), approfondissement du génie logiciel et des systèmes.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Mastère pro. — Ingénierie du Développement IT, Robotique & IA</h4>
+
+              <span>ISET Radès — 2024 – Actuel</span>
+
+              <p class="timeline-text">
+                Mastère professionnel axé sur le développement IT, la robotique et l’intelligence artificielle (en cours).
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Licence en Technologies de l’Information</h4>
+
+              <span>ISET Radès — 2021 – 2024</span>
+
+              <p class="timeline-text">
+                Développement des Systèmes d’Information — conception, développement et déploiement d’applications.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Expérience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Développeur Full Stack & DevOps — GDP, Tunis</h4>
+
+              <span>Avril 2025 – Présent</span>
+
+              <p class="timeline-text">
+                Développement et maintenance d’applications web React / Laravel. Conception d’architectures AWS
+                scalables avec Docker et pipelines CI/CD. Intégration de fonctionnalités d’IA dans des outils internes.
+                Revues de code et transmission des bonnes pratiques.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Développeur Python — Leads Provider, Tunis</h4>
+
+              <span>Octobre 2024 – Mars 2025</span>
+
+              <p class="timeline-text">
+                Scripts de web scraping (BeautifulSoup, Scrapy, Selenium) pour automatiser la collecte de données.
+                Nettoyage et intégration de données structurées (JSON, CSV) dans MySQL et MongoDB.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Full Stack (fin d’études) — Varjak, Tunis</h4>
+
+              <span>Février 2024 – Juin 2024</span>
+
+              <p class="timeline-text">
+                Application « Challenge Commercial » : React / Ant Design / Tailwind, backend Express.js,
+                PostgreSQL en SCRUM, intégration des API Google et Gmail. Conteneurisation Docker.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Stagiaire Full Stack — Tunisie Telecom, Béja</h4>
+
+              <span>Janvier 2024 – Février 2024</span>
+
+              <p class="timeline-text">
+                Développement de l’application e-commerce « TelecomTchStore »
+                (React, Bootstrap, Express.js, MongoDB).
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Compétences</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <div class="skill-label">
+                  <span class="skill-icon" aria-hidden="true">
+                    <ion-icon name="logo-react"></ion-icon>
+                  </span>
+                  <h5 class="h5">Frontend (React, Angular, Tailwind)</h5>
+                </div>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <div class="skill-label">
+                  <span class="skill-icon" aria-hidden="true">
+                    <ion-icon name="server-outline"></ion-icon>
+                  </span>
+                  <h5 class="h5">Backend (Node.js, Laravel, Spring Boot)</h5>
+                </div>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <div class="skill-label">
+                  <span class="skill-icon" aria-hidden="true">
+                    <ion-icon name="cloud-outline"></ion-icon>
+                  </span>
+                  <h5 class="h5">Cloud & DevOps (AWS, Docker, K8s, CI/CD)</h5>
+                </div>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <div class="skill-label">
+                  <span class="skill-icon" aria-hidden="true">
+                    <ion-icon name="layers-outline"></ion-icon>
+                  </span>
+                  <h5 class="h5">Bases de données (PostgreSQL, MySQL, MongoDB)</h5>
+                </div>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <div class="skill-label">
+                  <span class="skill-icon" aria-hidden="true">
+                    <ion-icon name="logo-python"></ion-icon>
+                  </span>
+                  <h5 class="h5">Python & automatisation</h5>
+                </div>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Full stack</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Mobile</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Devops</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Sélectionner une catégorie</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Full stack</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Mobile</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Devops</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web"
+              data-project-title="G-Digital Partner"
+              data-project-category="Web — Agence digitale"
+              data-project-url="https://g-digitalpartner.com"
+              data-project-img="./assets/images/projects/gdp.png"
+              data-project-desc="Site vitrine de l'agence G-Digital Partner : transformation digitale, développement web, IA et automatisation de processus."
+              data-project-tech="React,Tailwind CSS,Animations,Responsive,SEO"
+              data-project-features="Landing page moderne,Présentation des services digitaux,Chatbot vocal DigitalIA,Parcours contact & conversion,Design sombre premium">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/gdp.png" alt="G-Digital Partner" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">G-Digital Partner</h3>
+                <p class="project-category">Web — g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="full stack"
+              data-project-title="GDPilia — CRM IA"
+              data-project-category="Full Stack — CRM alimenté par IA"
+              data-project-url="https://crm.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/crm.png"
+              data-project-desc="CRM intelligent pour moderniser les ventes, gérer la relation client et accélérer la croissance. Plateforme SaaS avec essai gratuit et démo."
+              data-project-tech="React,Node.js / API,IA,SaaS,Auth JWT"
+              data-project-features="Pipeline commercial intelligent,Gestion de la relation client,Essai gratuit 14 jours,Démo produit,Tableau de bord croissance">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/crm.png" alt="GDPilia CRM" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">GDPilia — CRM IA</h3>
+                <p class="project-category">Full Stack — crm.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web"
+              data-project-title="Intelligence Data"
+              data-project-category="Web — Data & IA pour PME"
+              data-project-url="https://intelligence-data.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/intelligence.png"
+              data-project-desc="Plateforme de diagnostic et valorisation des données pour les PME : méthode, solutions IA, formations et simulateur d'audit gratuit."
+              data-project-tech="React,Tailwind CSS,Data Viz,IA,Lead gen"
+              data-project-features="Diagnostic gratuit en 2 minutes,Simulateur de valeur des données,Parcours méthode & solutions IA,Formations & cas concrets,CTA audit gratuit">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/intelligence.png" alt="Intelligence Data" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Intelligence Data</h3>
+                <p class="project-category">Web — intelligence-data.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web"
+              data-project-title="eGate Référencement"
+              data-project-category="Web — SEO"
+              data-project-url="https://seo.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/seo.png"
+              data-project-desc="Landing SEO eGate Référencement : analyse de visibilité Google, expertise SEO et génération de leads via audit de site."
+              data-project-tech="React,SEO,Landing page,Lead capture,Responsive"
+              data-project-features="Analyse de visibilité Google,Formulaire d'audit URL,Positionnement expertise SEO,Parcours contact rapide,Design conversion-oriented">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/seo.png" alt="eGate Référencement" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">eGate Référencement</h3>
+                <p class="project-category">Web — seo.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="full stack"
+              data-project-title="Sequenti"
+              data-project-category="Full Stack — Transmission d'entreprises"
+              data-project-url="https://app.sequenti.fr"
+              data-project-img="./assets/images/projects/sequenti.png"
+              data-project-desc="Plateforme de mise en relation pour la transmission d'entreprises entre cédants et repreneurs, de la première rencontre jusqu'au closing."
+              data-project-tech="React 18,Tailwind CSS,Shadcn UI,FastAPI,MongoDB,JWT,Axios,Playwright,Nginx"
+              data-project-features="Simulateur de valorisation (3 méthodes),Scoring repreneurs (sur 100),Catalogue d'opportunités filtré,Gestion dynamique des NDA,Back-office admin & exports,Intégration Calendly & CRM">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/sequenti.png" alt="Sequenti" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sequenti</h3>
+                <p class="project-category">Full Stack — app.sequenti.fr</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="full stack"
+              data-project-title="FoodLocal"
+              data-project-category="Full Stack — Marketplace locale"
+              data-project-url="https://foodlocal.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/foodlocal.png"
+              data-project-desc="Marketplace B2C qui connecte les producteurs agricoles locaux et les consommateurs éco-responsables pour promouvoir les circuits courts."
+              data-project-tech="React 18,Tailwind CSS,Shadcn/UI,FastAPI,MongoDB,Stripe,Resend,Leaflet,JWT"
+              data-project-features="Espace consommateur & producteur,Carte interactive des producteurs,Paiements Stripe,Messagerie directe,Abonnement producteur 49€/mois,Commission plateforme 10%">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/foodlocal.png" alt="FoodLocal" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FoodLocal</h3>
+                <p class="project-category">Full Stack — foodlocal.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="web"
+              data-project-title="Nuit de Pleine Lune"
+              data-project-category="Web — Événementiel Paddle & Co"
+              data-project-url="https://paddleand-co-albi.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/paddle.png"
+              data-project-desc="Landing événementielle premium pour une balade paddle nocturne à Albi sous la pleine lune, avec réservation et places limitées."
+              data-project-tech="React,Landing page,UX événementielle,Responsive,Design premium"
+              data-project-features="Réservation en ligne,Compteur de places restantes,Espace organisateur,Positionnement micro-luxe,Dossier marketing & financier associé">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/paddle.png" alt="Nuit de Pleine Lune" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Nuit de Pleine Lune</h3>
+                <p class="project-category">Web — paddleand-co-albi.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="devops"
+              data-project-title="FormationPro (Skill Tree)"
+              data-project-category="Full Stack + DevOps/Cloud — PI & PFA · ITEAM 2025–2026"
+              data-project-url="https://github.com/Riahisemah"
+              data-project-img="./assets/images/projects/formationpro.png"
+              data-project-gallery="./assets/images/projects/formationpro.png,./assets/images/projects/formationpro-enroll.png,./assets/images/projects/formationpro-team.png,./assets/images/projects/formationpro-reports.png,./assets/images/projects/formationpro-infra.png,./assets/images/projects/cicd.png"
+              data-project-pdf-pi="./assets/docs/FormationPro_PI.pdf"
+              data-project-pdf-pfa="./assets/docs/FormationPro_PFA.pdf"
+              data-project-desc="Plateforme web full-stack de gestion des formations professionnelles, des compétences (Skill Tree) et du suivi de progression. Projet d'intégration (PI) et projet de fin d'année (PFA) — spécialité Cloud Computing & Virtualisation, ITEAM University. Architecture React/TypeScript + Spring Boot déployée sur Amazon EKS."
+              data-project-tech="React,TypeScript,Vite,Spring Boot 3,Java 17,Spring Security,JWT,MariaDB,Hibernate/JPA,Docker,Amazon EKS,Terraform,AWS ECR,ALB,GitHub Actions,SonarCloud,Scrum"
+              data-project-features="Auth JWT multi-rôles (RH, Manager, Employé),Catalogue de formations,Inscriptions & suivi de progression,Skill Tree compétences,Objectifs manager & deadlines,Feedback & évaluation d’impact,Notifications & rapports analytiques,Infra Terraform (VPC, EKS, ECR, ALB),CI/CD multi-jobs GitHub Actions,Qualité SonarCloud & healthchecks">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/formationpro.png" alt="FormationPro Skill Tree" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">FormationPro (Skill Tree)</h3>
+                <p class="project-category">PI + PFA — Full Stack / Cloud / DevOps</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="devops"
+              data-project-title="Architectures AWS Production"
+              data-project-category="Cloud — AWS scalable & sécurisé (GDP)"
+              data-project-url="https://g-digitalpartner.com"
+              data-project-img="./assets/images/projects/aws-arch.png"
+              data-project-gallery="./assets/images/projects/aws-arch.png,./assets/images/projects/formationpro-infra.png,./assets/images/projects/cicd.png"
+              data-project-desc="Conception et mise en place d'architectures AWS scalables et sécurisées pour des applications de production chez GDP, avec conteneurisation Docker et automatisation des déploiements."
+              data-project-tech="AWS EC2,AWS Lambda,API Gateway,DynamoDB,AppSync,Docker,CI/CD,Linux,React,Laravel"
+              data-project-features="Architectures cloud production,Conteneurisation Docker,Déploiements automatisés,Applications React / Laravel sur AWS,Sécurité & scalabilité,Revues de code & bonnes pratiques DevOps">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/aws-arch.png" alt="Architectures AWS Production" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Architectures AWS Production</h3>
+                <p class="project-category">Cloud — GDP / AWS</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="devops"
+              data-project-title="Pipelines CI/CD & Qualité"
+              data-project-category="DevOps — Automatisation & qualité"
+              data-project-url="https://github.com/Riahisemah"
+              data-project-img="./assets/images/projects/cicd.png"
+              data-project-gallery="./assets/images/projects/cicd.png,./assets/images/projects/formationpro-infra.png"
+              data-project-desc="Mise en place de pipelines CI/CD multi-jobs pour automatiser build, tests, analyse qualité et déploiements, avec intégration SonarCloud et outils Jenkins / GitHub Actions."
+              data-project-tech="GitHub Actions,Jenkins,SonarCloud,Docker,Linux,Shell Scripting,Git"
+              data-project-features="Pipelines multi-jobs,Build & tests automatisés,Analyse qualité SonarCloud,Déploiements automatisés,Conteneurisation Docker,Documentation des processus">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/cicd.png" alt="Pipelines CI/CD & Qualité" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pipelines CI/CD & Qualité</h3>
+                <p class="project-category">DevOps — GitHub Actions / Jenkins</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="devops"
+              data-project-title="VersionControl Version Pro"
+              data-project-category="DevOps — Gestion de versions & déploiements"
+              data-project-url="https://gestion.version.g-digitalpartner.com"
+              data-project-img="./assets/images/projects/versions.png"
+              data-project-desc="Application de gestion de projets, versions, release notes et suivi des déploiements sur les environnements DEV / TEST / INT / PROD."
+              data-project-tech="Laravel,PHP,MySQL,React,Vite,API REST,Auth,Environnements DEV/TEST/INT/PROD"
+              data-project-features="Gestion projets & versions,Statuts draft / published / archived,Release notes & attachments,Suivi environnements & timeline,Notifications email à la publication,Dashboard activité">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/versions.png" alt="VersionControl Version Pro" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">VersionControl</h3>
+                <p class="project-category">DevOps — gestion.version.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="mobile"
+              data-project-title="CashFlow Quest"
+              data-project-category="Mobile / Web — Littératie financière"
+              data-project-url="https://cash-flow.g-digitalpartner.com/journey"
+              data-project-img="./assets/images/projects/cashflow.png"
+              data-project-desc="Application éducative gamifiée qui enseigne la littératie financière via scénarios, quiz, simulateur de vie et conseils IA personnalisés."
+              data-project-tech="Expo,React Native,TypeScript,FastAPI,MongoDB,OpenAI GPT-4o,JWT,RevenueCat"
+              data-project-features="Scénarios financiers progressifs,Quiz & explications,Simulateur de vie financière,Conseils IA personnalisés,Classement & badges,Mode invité + freemium,Dashboard admin">
+              <a href="#" data-project-open>
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/projects/cashflow.png" alt="CashFlow Quest" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">CashFlow Quest</h3>
+                <p class="project-category">Mobile / Web — cash-flow.g-digitalpartner.com</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- Project detail modal -->
+        <div class="modal-container" data-project-modal>
+
+          <div class="overlay" data-project-overlay></div>
+
+          <section class="testimonials-modal project-detail-modal">
+
+            <button class="modal-close-btn" data-project-close>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper project-modal-media">
+              <figure class="project-modal-figure">
+                <img src="./assets/images/projects/gdp.png" alt="Project preview" data-project-modal-img>
+              </figure>
+              <ul class="project-gallery" data-project-modal-gallery></ul>
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-project-modal-title>Projet</h4>
+
+              <p class="project-modal-meta" data-project-modal-category></p>
+
+              <div class="project-modal-body" data-project-modal-text>
+                <p></p>
+              </div>
+
+              <div class="project-modal-section">
+                <h5 class="project-modal-label">Technologies</h5>
+                <ul class="project-tech-list" data-project-modal-tech></ul>
+              </div>
+
+              <div class="project-modal-section">
+                <h5 class="project-modal-label">Fonctionnalités</h5>
+                <ul class="project-feature-list" data-project-modal-features></ul>
+              </div>
+
+              <div class="project-modal-actions">
+                <a href="#" class="project-action-btn primary" target="_blank" rel="noopener" data-project-modal-link>
+                  <ion-icon name="open-outline"></ion-icon>
+                  <span>Voir le site</span>
+                </a>
+                <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pi hidden>
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Rapport PI</span>
+                </a>
+                <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pfa hidden>
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <span>Rapport PFA</span>
+                </a>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://maps.google.com/maps?q=B%C3%A9ja,+Tunisie&hl=fr&z=12&output=embed"
+              width="400" height="300" loading="lazy"
+              allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"
+              title="Carte — Béja, Tunisie"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Me contacter</h3>
+
+          <p class="about-text" style="margin-bottom: 20px;">
+            Email :
+            <a href="mailto:riahisamh817@gmail.com" class="contact-link">riahisamh817@gmail.com</a>
+            — Tél. :
+            <a href="tel:+21626653690" class="contact-link">+216 26 653 690</a>
+          </p>
+
+          <form action="mailto:riahisamh817@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Adresse e-mail" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Envoyer</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
