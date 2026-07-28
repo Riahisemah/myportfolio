@@ -1100,3 +1100,109 @@ article.active {
     grid-template-columns: 1fr 1fr;
   }
 }
+
+/*-----------------------------------*\
+  #DESIGN REFINE — ingénieur look
+\*-----------------------------------*/
+
+.info-content .title {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 6px 14px;
+  background: linear-gradient(135deg, hsla(172, 60%, 40%, 0.2), hsla(190, 60%, 45%, 0.12));
+  border: 1px solid hsla(172, 55%, 50%, 0.35);
+  color: hsl(172, 75%, 72%);
+}
+
+.sidebar,
+article {
+  border-radius: 22px;
+  border-color: hsla(172, 35%, 55%, 0.14);
+}
+
+.about-text p:first-child {
+  font-size: 16px;
+  line-height: 1.7;
+  color: hsl(210, 20%, 88%);
+}
+
+.service-content-box {
+  text-align: left;
+}
+
+.service-icon-box {
+  margin-inline: 0;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+}
+
+@media (min-width: 580px) {
+  .service-item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .service-icon-box {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-link {
+  letter-spacing: 0.06em;
+}
+
+.article-title::after {
+  height: 3px;
+  width: 48px;
+  background: linear-gradient(90deg, hsl(172, 72%, 52%), hsl(190, 75%, 60%), transparent);
+}
+
+.timeline-item-title {
+  font-size: 15px;
+}
+
+.contact-hero {
+  margin-bottom: 24px;
+  padding: 28px 24px;
+  border-radius: 16px;
+  border: 1px solid hsla(172, 40%, 50%, 0.18);
+  background:
+    radial-gradient(ellipse 80% 120% at 10% 0%, hsla(172, 70%, 45%, 0.16), transparent 55%),
+    linear-gradient(160deg, hsla(210, 22%, 14%, 0.9), hsla(220, 26%, 9%, 0.95));
+}
+
+.contact-hero-text {
+  font-family: var(--ff-display);
+  font-size: clamp(18px, 2.4vw, 24px);
+  font-weight: 650;
+  letter-spacing: -0.02em;
+  line-height: 1.35;
+  color: var(--white-2);
+  max-width: 28ch;
+}
+
+.form-btn:enabled {
+  background: linear-gradient(135deg, hsl(172, 72%, 42%), hsl(190, 70%, 45%));
+  color: var(--smoky-black);
+}
+
+.contacts-list .contact-title {
+  letter-spacing: 0.08em;
+}
+
+@media (min-width: 1250px) {
+  .info-content .title {
+    white-space: normal;
+    text-align: center;
+    max-width: 200px;
+    line-height: 1.35;
+  }
+}
