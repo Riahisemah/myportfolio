@@ -141,6 +141,11 @@
 
         </ul>
 
+        <a href="mailto:riahisamh817@gmail.com" class="sidebar-cta">
+          <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+          <span>Discutons d’un projet</span>
+        </a>
+
       </div>
 
     </aside>
@@ -208,6 +213,21 @@
             Je conçois des applications web de bout en bout et des architectures cloud scalables,
             avec une approche orientée production.
           </p>
+
+          <ul class="highlight-stats" aria-label="Points clés">
+            <li>
+              <strong>12+</strong>
+              <span>Projets livrés</span>
+            </li>
+            <li>
+              <strong>Full Stack</strong>
+              <span>React · Spring · Laravel</span>
+            </li>
+            <li>
+              <strong>Cloud</strong>
+              <span>AWS · EKS · Terraform</span>
+            </li>
+          </ul>
 
           <ul class="tech-stack" aria-label="Stack technique">
             <li>React</li>
@@ -356,47 +376,6 @@
           </ul>
 
         </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box cert-icon-box">
-                <ion-icon name="ribbon-outline" data-modal-cert-icon></ion-icon>
-                <img src="./assets/images/icon-dev.svg" alt="Certification" width="80" data-modal-img hidden>
-              </figure>
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>AWS Educate</h4>
-
-              <time datetime="2026-01-01">2026</time>
-
-              <div data-modal-text>
-                <p>
-                  Getting Started with Compute / Storage et Introduction to Cloud 101 — Amazon Web Services, 2026.
-                  Bases du cloud AWS : calcul, stockage et concepts fondamentaux.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
       </article>
 
@@ -1002,65 +981,6 @@
 
         </section>
 
-        <!-- Project detail modal -->
-        <div class="modal-container" data-project-modal>
-
-          <div class="overlay" data-project-overlay></div>
-
-          <section class="testimonials-modal project-detail-modal">
-
-            <button class="modal-close-btn" data-project-close>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper project-modal-media">
-              <figure class="project-modal-figure">
-                <img src="./assets/images/projects/gdp.png" alt="Project preview" data-project-modal-img>
-              </figure>
-              <ul class="project-gallery" data-project-modal-gallery></ul>
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-project-modal-title>Projet</h4>
-
-              <p class="project-modal-meta" data-project-modal-category></p>
-
-              <div class="project-modal-body" data-project-modal-text>
-                <p></p>
-              </div>
-
-              <div class="project-modal-section">
-                <h5 class="project-modal-label">Technologies</h5>
-                <ul class="project-tech-list" data-project-modal-tech></ul>
-              </div>
-
-              <div class="project-modal-section">
-                <h5 class="project-modal-label">Fonctionnalités</h5>
-                <ul class="project-feature-list" data-project-modal-features></ul>
-              </div>
-
-              <div class="project-modal-actions">
-                <a href="#" class="project-action-btn primary" target="_blank" rel="noopener" data-project-modal-link>
-                  <ion-icon name="open-outline"></ion-icon>
-                  <span>Voir le site</span>
-                </a>
-                <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pi hidden>
-                  <ion-icon name="document-text-outline"></ion-icon>
-                  <span>Rapport PI</span>
-                </a>
-                <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pfa hidden>
-                  <ion-icon name="document-text-outline"></ion-icon>
-                  <span>Rapport PFA</span>
-                </a>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
-
       </article>
 
 
@@ -1078,9 +998,20 @@
         </header>
 
         <section class="contact-hero">
+          <p class="contact-hero-eyebrow">Contact</p>
           <p class="contact-hero-text">
             Un projet Full Stack, Cloud ou DevOps ? Écrivons-nous.
           </p>
+          <div class="contact-hero-actions">
+            <a href="mailto:riahisamh817@gmail.com" class="project-action-btn primary">
+              <ion-icon name="mail-outline"></ion-icon>
+              <span>riahisamh817@gmail.com</span>
+            </a>
+            <a href="tel:+21626653690" class="project-action-btn">
+              <ion-icon name="call-outline"></ion-icon>
+              <span>+216 26 653 690</span>
+            </a>
+          </div>
         </section>
 
         <section class="contact-form">
@@ -1094,15 +1025,30 @@
             <a href="tel:+21626653690" class="contact-link">+216 26 653 690</a>
           </p>
 
-          <form action="mailto:riahisamh817@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+          <form
+            name="contact"
+            method="POST"
+            class="form"
+            data-form
+            netlify
+            netlify-honeypot="bot-field"
+            action="https://formsubmit.co/riahisamh817@gmail.com"
+          >
+            <input type="hidden" name="form-name" value="contact">
+            <input type="hidden" name="_subject" value="Nouveau message — Portfolio Semah Riahi">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="bot-field" class="bot-field" tabindex="-1" autocomplete="off" aria-hidden="true">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Nom complet" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Nom complet" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Adresse e-mail" required data-form-input>
             </div>
 
             <textarea name="message" class="form-input" placeholder="Votre message" required data-form-input></textarea>
+
+            <p class="form-status" data-form-status role="status" aria-live="polite" hidden></p>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
@@ -1119,10 +1065,76 @@
 
   </main>
 
+  <!-- Certifications modal -->
+  <div class="modal-container" data-modal-container>
+    <div class="overlay" data-overlay></div>
+    <section class="testimonials-modal">
+      <button class="modal-close-btn" data-modal-close-btn>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="modal-img-wrapper">
+        <figure class="modal-avatar-box cert-icon-box">
+          <ion-icon name="ribbon-outline" data-modal-cert-icon></ion-icon>
+          <img src="./assets/images/icon-dev.svg" alt="Certification" width="80" data-modal-img hidden>
+        </figure>
+      </div>
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-modal-title>AWS Educate</h4>
+        <time datetime="2026-01-01">2026</time>
+        <div data-modal-text>
+          <p>
+            Getting Started with Compute / Storage et Introduction to Cloud 101 — Amazon Web Services, 2026.
+            Bases du cloud AWS : calcul, stockage et concepts fondamentaux.
+          </p>
+        </div>
+      </div>
+    </section>
+  </div>
 
-
-
-
+  <!-- Project detail modal -->
+  <div class="modal-container" data-project-modal>
+    <div class="overlay" data-project-overlay></div>
+    <section class="testimonials-modal project-detail-modal">
+      <button class="modal-close-btn" data-project-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+      <div class="modal-img-wrapper project-modal-media">
+        <figure class="project-modal-figure">
+          <img src="./assets/images/projects/gdp.png" alt="Project preview" data-project-modal-img>
+        </figure>
+        <ul class="project-gallery" data-project-modal-gallery></ul>
+      </div>
+      <div class="modal-content">
+        <h4 class="h3 modal-title" data-project-modal-title>Projet</h4>
+        <p class="project-modal-meta" data-project-modal-category></p>
+        <div class="project-modal-body" data-project-modal-text>
+          <p></p>
+        </div>
+        <div class="project-modal-section">
+          <h5 class="project-modal-label">Technologies</h5>
+          <ul class="project-tech-list" data-project-modal-tech></ul>
+        </div>
+        <div class="project-modal-section">
+          <h5 class="project-modal-label">Fonctionnalités</h5>
+          <ul class="project-feature-list" data-project-modal-features></ul>
+        </div>
+        <div class="project-modal-actions">
+          <a href="#" class="project-action-btn primary" target="_blank" rel="noopener" data-project-modal-link>
+            <ion-icon name="open-outline"></ion-icon>
+            <span>Voir le site</span>
+          </a>
+          <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pi hidden>
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Rapport PI</span>
+          </a>
+          <a href="#" class="project-action-btn" target="_blank" rel="noopener" data-project-modal-pdf-pfa hidden>
+            <ion-icon name="document-text-outline"></ion-icon>
+            <span>Rapport PFA</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!--
     - custom js link

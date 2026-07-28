@@ -32,6 +32,7 @@ const modalCertIcon = document.querySelector("[data-modal-cert-icon]");
 const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
+  document.body.classList.toggle("modal-open", modalContainer.classList.contains("active"));
 }
 
 // add click event to all modal items
@@ -134,18 +135,77 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
+const formBtnLabel = formBtn ? formBtn.querySelector("span") : null;
+
+const setFormStatus = function (message, type) {
+  if (!formStatus) return;
+  formStatus.hidden = !message;
+  formStatus.textContent = message || "";
+  formStatus.classList.remove("is-success", "is-error", "is-loading");
+  if (type) formStatus.classList.add("is-" + type);
+};
+
+const syncFormButton = function () {
+  if (!form || !formBtn) return;
+  if (form.checkValidity()) {
+    formBtn.removeAttribute("disabled");
+  } else {
+    formBtn.setAttribute("disabled", "");
+  }
+};
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+  formInputs[i].addEventListener("input", syncFormButton);
+}
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
-    } else {
-      formBtn.setAttribute("disabled", "");
+if (form) {
+  form.addEventListener("submit", async function (event) {
+    event.preventDefault();
+    if (!form.checkValidity()) return;
+
+    const payload = {
+      name: form.elements.name.value.trim(),
+      email: form.elements.email.value.trim(),
+      message: form.elements.message.value.trim(),
+      _subject: "Nouveau message — Portfolio Semah Riahi",
+      _template: "table",
+      _captcha: "false"
+    };
+
+    formBtn.setAttribute("disabled", "");
+    if (formBtnLabel) formBtnLabel.textContent = "Envoi...";
+    setFormStatus("Envoi du message en cours…", "loading");
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/riahisamh817@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const result = await response.json().catch(function () { return {}; });
+
+      if (!response.ok) {
+        throw new Error(result.message || "Erreur d’envoi");
+      }
+
+      form.reset();
+      setFormStatus("Message envoyé. Je te réponds dès que possible.", "success");
+      if (formBtnLabel) formBtnLabel.textContent = "Envoyé";
+      setTimeout(function () {
+        if (formBtnLabel) formBtnLabel.textContent = "Envoyer";
+        syncFormButton();
+      }, 2200);
+    } catch (error) {
+      setFormStatus("Envoi impossible. Écris-moi directement : riahisamh817@gmail.com", "error");
+      if (formBtnLabel) formBtnLabel.textContent = "Envoyer";
+      syncFormButton();
     }
-
   });
 }
 
@@ -388,6 +448,7 @@ const initProjectModal = function () {
   const toggleProjectModal = function () {
     modal.classList.toggle("active");
     overlay.classList.toggle("active");
+    document.body.classList.toggle("modal-open", modal.classList.contains("active"));
   };
 
   openers.forEach(function (opener) {
